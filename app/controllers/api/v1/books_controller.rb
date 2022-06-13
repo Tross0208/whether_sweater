@@ -3,7 +3,6 @@ class Api::V1::BooksController < ApplicationController
     books = BookFacade.search_books(params[:location], params[:quantity])
     location = MapFacade.get_coords(params[:location])
     weather = WeatherFacade.get_weather(location)
-    binding.pry
-    render json: BookSerializer.books_index(books, weather)
+    render json: BookSerializer.books_index(books, weather, params[:location])
   end
 end
