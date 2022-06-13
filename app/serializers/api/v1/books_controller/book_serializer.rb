@@ -7,6 +7,7 @@ class Api::V1::BooksController::BookSerializer
     attributes: {
       destination: location_data,
       forecast: {
+        #a bit heavy on the reach
         summary: weather[:current][:weather].first[:description],
         temperature: weather[:current][:temp]
       },

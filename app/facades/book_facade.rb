@@ -6,9 +6,8 @@ class BookFacade
 
 
   def self.search_books(location, quantity)
-
     data = BookService.get_books(location)
-    #refactor meeee
+    #kinda ugly
     if data[:docs].count > quantity.to_i
       books = []
       i = 0
