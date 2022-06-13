@@ -1,5 +1,5 @@
 class Api::V1::BooksController::BookSerializer
-  def self.books_index(books_data, weather, location_data)
+  def self.books_index(books_data, weather, location_data, total_results)
     {
   data: {
     id: nil,
@@ -10,7 +10,7 @@ class Api::V1::BooksController::BookSerializer
         summary: weather[:current][:weather].first[:description],
         temperature: weather[:current][:temp]
       },
-      total_books_found: 172,
+      total_books_found: total_results,
       books: books_data.map do |book|
         {
           isbn: book[:isbn],

@@ -1,4 +1,10 @@
 class BookFacade
+  def self.total_results(location)
+    data = BookService.get_books(location)
+    data[:numFound]
+  end
+
+
   def self.search_books(location, quantity)
 
     data = BookService.get_books(location)
