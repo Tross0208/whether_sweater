@@ -342,7 +342,6 @@
           null,
           null,
           1,
-          null,
           3,
           null,
           3,
@@ -367,8 +366,8 @@
           1,
           1,
           1,
+          null,
           1,
-          0,
           null,
           null
         ]
@@ -379,8 +378,8 @@
           null,
           1,
           1,
-          0,
-          0,
+          1,
+          1,
           null,
           null
         ]
@@ -392,9 +391,9 @@
           1,
           null,
           1,
-          0,
+          1,
           null,
-          0,
+          1,
           null,
           null,
           null
@@ -407,10 +406,10 @@
           1,
           null,
           1,
-          0,
+          1,
           null,
-          0,
-          0,
+          1,
+          1,
           null,
           null,
           null
@@ -423,10 +422,10 @@
           1,
           null,
           1,
-          0,
+          1,
           null,
-          0,
-          0,
+          1,
+          1,
           null,
           null,
           null
@@ -436,16 +435,16 @@
         "lines": [
           1,
           1,
-          5,
-          5,
+          6,
+          6,
           null,
           null,
           1,
-          5,
+          6,
           null,
           null,
           1,
-          5,
+          6,
           null,
           null
         ]
@@ -459,7 +458,6 @@
           1,
           1,
           null,
-          1,
           1,
           null,
           null
@@ -475,8 +473,8 @@
         "lines": [
           1,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null
         ]
@@ -485,18 +483,18 @@
         "lines": [
           1,
           1,
-          1,
-          1,
+          3,
+          3,
           null,
           null,
           null,
           1,
-          1,
+          3,
           null,
           null,
           1,
-          1,
-          1,
+          3,
+          3,
           null,
           null,
           null
@@ -506,7 +504,7 @@
         "lines": [
           1,
           1,
-          1,
+          2,
           null,
           null
         ]
@@ -515,17 +513,17 @@
         "lines": [
           1,
           1,
-          1,
-          1,
+          3,
+          3,
           null,
           null,
           1,
-          1,
+          3,
           null,
           null,
           1,
-          1,
-          1,
+          3,
+          3,
           null,
           null,
           null
@@ -548,7 +546,71 @@
           null,
           null,
           null,
+          null,
           5,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/pistachiojoe/turing/3mod/proj/sweater/sweater/app/controllers/api/v1/forecasts_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/pistachiojoe/turing/3mod/proj/sweater/sweater/app/serializers/api/v1/forecasts_controller/forecast_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null,
@@ -562,6 +624,6 @@
         ]
       }
     },
-    "timestamp": 1655143157
+    "timestamp": 1655143223
   }
 }
