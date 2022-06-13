@@ -1,18 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/pistachiojoe/turing/3mod/proj/sweater/sweater/spec/services/map_service_spec.rb": {
+      "/Users/pistachiojoe/turing/3mod/proj/sweater/sweater/spec/requests/api/v1/forecast_request_spec.rb": {
         "lines": [
           1,
           null,
           1,
-          null,
           1,
           1,
-          null,
-          1,
-          1,
-          null,
+          0,
           null,
           null
         ]
@@ -293,7 +289,7 @@
           null,
           null,
           1,
-          1,
+          2,
           null,
           null,
           null,
@@ -306,6 +302,27 @@
         "lines": [
           1,
           null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/pistachiojoe/turing/3mod/proj/sweater/sweater/spec/services/map_service_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
           null
         ]
       },
@@ -316,11 +333,38 @@
           1,
           null,
           1,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/pistachiojoe/turing/3mod/proj/sweater/sweater/app/controllers/api/v1/forecasts_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
           1,
           null,
+          null
+        ]
+      },
+      "/Users/pistachiojoe/turing/3mod/proj/sweater/sweater/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/pistachiojoe/turing/3mod/proj/sweater/sweater/app/facades/map_facade.rb": {
+        "lines": [
           1,
           1,
-          null,
+          1,
+          1,
           null,
           null
         ]
@@ -346,6 +390,15 @@
           null
         ]
       },
+      "/Users/pistachiojoe/turing/3mod/proj/sweater/sweater/app/facades/weather_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/pistachiojoe/turing/3mod/proj/sweater/sweater/app/services/weather_service.rb": {
         "lines": [
           1,
@@ -367,6 +420,6 @@
         ]
       }
     },
-    "timestamp": 1655104387
+    "timestamp": 1655128599
   }
 }
