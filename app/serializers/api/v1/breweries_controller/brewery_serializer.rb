@@ -1,7 +1,5 @@
 class Api::V1::BreweriesController::BrewerySerializer
   def self.brewery_index_serializer(breweries, location, weather)
-
-
 {
   "data": {
     "id": "null",
@@ -20,7 +18,6 @@ class Api::V1::BreweriesController::BrewerySerializer
           "brewery_type": brewery.brewery_type
         }
       end
-
     }
   }
 }
