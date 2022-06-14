@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "Brewery serializer" do
   it 'returns serialized breweries', :vcr do
     location = MapFacade.get_coords("denver")
-    weather = WeatherFacade.get_weather(location)
+    weather = WeatherFacade.get_little_weather(location)
     breweries = BreweryFacade.total_results("denver", 5)
 
     result = Api::V1::BreweriesController::BrewerySerializer.brewery_index_serializer(breweries, "denver", weather)

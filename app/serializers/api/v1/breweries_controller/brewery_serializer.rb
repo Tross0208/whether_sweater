@@ -9,8 +9,8 @@ class Api::V1::BreweriesController::BrewerySerializer
     "attributes": {
       "destination": location,
       "forecast": {
-        "summary": weather[:current][:weather].first[:description],
-        "temperature": ((weather[:current][:temp]-273)*1.8+32).round
+        "summary": weather.conditions,
+        "temperature": weather.temperature
       },
       "breweries":
         breweries.map do |brewery|

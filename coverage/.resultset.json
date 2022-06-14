@@ -655,6 +655,11 @@
         "lines": [
           1,
           1,
+          0,
+          null,
+          null,
+          1,
+          2,
           2,
           null,
           null
@@ -680,6 +685,19 @@
           null
         ]
       },
+      "/Users/pistachiojoe/turing/3mod/proj/sweater/sweater/app/poros/weather.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/pistachiojoe/turing/3mod/proj/sweater/sweater/app/serializers/api/v1/breweries_controller/brewery_serializer.rb": {
         "lines": [
           1,
@@ -694,7 +712,7 @@
           null,
           null,
           null,
-          2,
+          null,
           null,
           null,
           null,
@@ -713,6 +731,6 @@
         ]
       }
     },
-    "timestamp": 1655226849
+    "timestamp": 1655227852
   }
 }
