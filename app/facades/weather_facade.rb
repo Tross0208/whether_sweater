@@ -1,11 +1,10 @@
 class WeatherFacade
   def self.get_weather(coords)
     weather = WeatherService.get_weather(coords[:lat], coords[:lng])
-
-    a = get_current_weather(weather)
-    c = get_hourly_weather(weather)
-    b = get_daily_weather(weather)
-    binding.pry
+    current = get_current_weather(weather)
+    hourly = get_hourly_weather(weather)
+    daily = get_daily_weather(weather)
+    all_weather = {current: current, hourly: hourly, daily: daily}
   end
 
   def self.get_current_weather(weather_data)
