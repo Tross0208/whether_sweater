@@ -1,17 +1,17 @@
 require 'rails_helper'
 
 RSpec.describe BookFacade do
-  it 'returns quantity of books by location', :vcr do
+  xit 'returns quantity of books by location', :vcr do
     result = BookFacade.search_books("denver,co", 5)
     expect(result.count).to eq(5)
   end
 
-  it 'returns total search results found', :vcr do
+  xit 'returns total search results found', :vcr do
     result = BookFacade.total_results("denver,co")
     expect(result).to eq(42475)
   end
 
-  it 'returns all search results if total is less than quantity', :vcr do
+  xit 'returns all search results if total is less than quantity', :vcr do
 
     response_body = File.read("spec/fixtures/few_results.json")
       stub_request(:get, "http://openlibrary.org/search.json?q=clarendon,tx").

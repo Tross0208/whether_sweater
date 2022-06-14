@@ -3,4 +3,5 @@ class MapFacade
     data = MapService.get_coords(location)
     return data[:results].first[:locations].first[:latLng]
   end
+
 end
