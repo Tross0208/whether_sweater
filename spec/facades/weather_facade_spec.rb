@@ -9,8 +9,8 @@ RSpec.describe "Weather Facade" do
     @daily = WeatherFacade.get_daily_weather(@weather)
     @all_weather = {current: @current, hourly: @hourly, daily: @daily}
   end
-  it 'gets current weather', :vcr do
 
+  it 'gets current weather', :vcr do
     expect(@current.temperature).to be_an(Integer)
     expect(@current.sunrise).to be_a(Time)
     expect(@current.sunset).to be_a(Time)
@@ -24,6 +24,7 @@ RSpec.describe "Weather Facade" do
 
   it 'gets daily weather', :vcr do
     first_day = @daily.first
+
     expect(@daily.count).to eq(5)
     expect(first_day.max_temperature).to be_an(Integer)
     expect(first_day.min_temperature).to be_an(Integer)
@@ -31,7 +32,6 @@ RSpec.describe "Weather Facade" do
     expect(first_day.sunset).to be_a(Time)
     expect(first_day.icon).to be_a(String)
     expect(first_day.conditions).to be_a(String)
-
   end
 
   it 'gets hourly weather', :vcr do
