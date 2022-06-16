@@ -14,8 +14,10 @@ RSpec.describe "User API Request" do
         'Accept': 'application/json'
       }
     response = post "/api/v1/users", headers: headers, params: JSON.generate(body)
-    full_response=JSON.parse(response.body, symbolize_names: true)
-    
-    expect(response).to eq(200)
+
+    expect(response).to eq(204)
+    expect(User.last.api_key).to be_a(String)
+    expect(User.last.id).to be_a(Integer)
+    expect(User.last.email).to eq("tim@gmail.com")
   end
 end

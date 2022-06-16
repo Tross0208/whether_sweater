@@ -1,12 +1,11 @@
 class Api::V1::UsersController < ApplicationController
 
   def create
-
     user = User.new(user_params)
     if user.valididate_password
-      binding.pry
       user.api_key = SecureRandom.urlsafe_base64
       user.save
+      render json: Api::V1::UsersController::UserSerializer.user_create_serializer(user)
     end
   end
   private
